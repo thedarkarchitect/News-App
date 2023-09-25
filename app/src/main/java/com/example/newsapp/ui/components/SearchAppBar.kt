@@ -15,9 +15,11 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.sp
+import com.example.newsapp.R
 
 @Composable
 fun SearchAppBar(
@@ -41,7 +43,7 @@ fun SearchAppBar(
         },
         placeholder = {
             Text(
-                text="Search...",
+                text= stringResource(id = R.string.search),
                 color=Color.White.copy(alpha = 0.7f)
             )
         },

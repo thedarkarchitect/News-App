@@ -9,8 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.newsapp.R
 
 @Composable
 fun RetryContent(
@@ -27,7 +29,7 @@ fun RetryContent(
             onClick = onRetry,
             modifier = modifier.align(CenterHorizontally)
         ){
-            Text(text = "Retry")
+            Text(text = stringResource(id = R.string.retry))
         }
     }
 }

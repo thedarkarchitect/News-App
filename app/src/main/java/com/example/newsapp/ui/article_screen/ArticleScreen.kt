@@ -19,8 +19,10 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.viewinterop.AndroidView
+import  com.example.newsapp.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -37,7 +39,7 @@ fun ArticleScreen(
         topBar = {
             TopAppBar(
                 title = { Text(
-                    text = "Article", fontWeight = FontWeight.Bold
+                    text = stringResource(id = R.string.article), fontWeight = FontWeight.Bold
                 ) },
                 navigationIcon  = {
                     IconButton(onClick = onBackPressed){

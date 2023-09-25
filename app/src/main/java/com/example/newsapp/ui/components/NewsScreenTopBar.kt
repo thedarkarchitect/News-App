@@ -14,7 +14,9 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import com.example.newsapp.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -26,7 +28,7 @@ fun NewsScreenTopBar(
     CenterAlignedTopAppBar(
         scrollBehavior = scrollBehavior,
         title = { Text(
-            text = "Newsroom", fontWeight = FontWeight.Bold
+            text = stringResource(id = R.string.newsroom), fontWeight = FontWeight.Bold
         ) },
         actions  = {
             IconButton(onClick = onSearchIconClicked){

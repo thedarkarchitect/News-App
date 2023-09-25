@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">News App</string>
+    <string name="article">Article</string>
+    <string name="newsroom">Newsroom</string>
+    <string name="search">Search...</string>
+    <string name="retry">Retry</string>
 </resources>
