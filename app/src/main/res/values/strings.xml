@@ -4,4 +4,5 @@
     <string name="newsroom">Newsroom</string>
     <string name="search">Search...</string>
     <string name="retry">Retry</string>
+    <string name="read_full_article">Read Full Article</string>
 </resources>
